@@ -14,6 +14,7 @@ builder.Services.AddDbContext<AppDbContext>(options => options.UseInMemoryDataba
 
 builder.Services.AddScoped<IPlatformRepo, PlatformRepository>();
 
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 var app = builder.Build();
 
