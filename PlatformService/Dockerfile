@@ -1,7 +1,6 @@
 ﻿FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build-env
 WORKDIR /App
 
-ENV DOTNET_URLS=http://8000:5000
 
 # Copy everything
 COPY . ./
