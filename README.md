@@ -1,5 +1,5 @@
 
-# Platform Service Microservice
+# Portfolio Microservice Architecture
 
 This project refers to the creation of two microservices developed as part of a portfolio to show a vivid comprehension of microservice architecture.
 
