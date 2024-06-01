@@ -1,7 +1,7 @@
 
 # Platform Service Microservice
 
-This project refers to one of two microservices developed as part of a portfolio to show microservices comprehension.
+This project refers to the creation of two microservices developed as part of a portfolio to show a vivid comprehension of microservice architecture.
 
 The project above demostrates a level of sufficiency in:
 * Creating REST APIs in controllers by following MVC pattern as well as the repository pattern
@@ -10,6 +10,6 @@ The project above demostrates a level of sufficiency in:
 ## Tech Stack
 
 **Server:** ASP.NET Core, C#
-**Database:** SQL Server
+**Databases:** SQL Server, In-Memory Database
 **Container Creation and Orchestration**: Docker and Kubernetes
 
