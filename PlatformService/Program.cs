@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using PlatformService.Data;
 using PlatformService.Interfaces;
 using PlatformService.Repositories;
+using PlatformService.SyncDataServices.http;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,8 +15,11 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(options => options.UseInMemoryDatabase("InMem"));
 
 builder.Services.AddScoped<IPlatformRepo, PlatformRepository>();
+builder.Services.AddHttpClient<ICommandDataClient, HttpCommandDataClient>();
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+Console.WriteLine($"-->Command Service Endpoint: {builder.Configuration["CommandService"]}");
 
 var app = builder.Build();
 
