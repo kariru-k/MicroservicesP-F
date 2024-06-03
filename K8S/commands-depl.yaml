@@ -1,34 +1,35 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: platforms-depl
+  name: commands-depl
+  labels:
+    app: commandservice
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: platformservice
+      app: commandservice
   template:
     metadata:
+      name: commandservice
       labels:
-        app: platformservice
+        app: commandservice
     spec:
       containers:
-      - name: platformservice
-        image: karirukeith/platformservice:latest
+        - name: commandservice
+          image: karirukeith/commandservice:latest
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: platforms-clusterip-srv
+  name: commands-clusterip-srv
 spec:
   type: ClusterIP
   selector:
-    app: platformservice
+    app: commandservice
   ports:
-    - name: platformservice
+    - name: commandservice
       protocol: TCP
       port: 8080
       targetPort: 8080
-        
-        
-        
+      
