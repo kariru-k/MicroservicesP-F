@@ -2,8 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mssql-depl
-  labels:
-    app: mssql-depl
 spec:
   replicas: 1
   selector:
@@ -11,7 +9,6 @@ spec:
       app: mssql
   template:
     metadata:
-      name: mssql-depl
       labels:
         app: mssql
     spec:
@@ -22,15 +19,15 @@ spec:
             - containerPort: 1433
               protocol: TCP
           env:
-            - name: MSSQL PID
+            - name: MSSQL_PID
               value: "Express"
             - name: ACCEPT_EULA
               value: "Y"
-            - name: SA_PASSWORD
+            - name: MSSQL_SA_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  key:  SA_PASSWORD
                   name: mssql
+                  key:  MSSQL_SA_PASSWORD
           volumeMounts:
             - mountPath: /var/opt/mssql/data
               name: mssqldb
