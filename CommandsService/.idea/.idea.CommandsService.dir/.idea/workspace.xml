@@ -10,9 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8394f88e-4fdf-4300-a946-3aa1bcc1c6eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../K8S/ingress-srv.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PlatformService/appsettings.Production.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CommandsService.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CommandsService.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../K8S/ingress-srv.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../K8S/ingress-srv.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +146,7 @@
       <option name="presentableId" value="Default" />
       <updated>1717391185564</updated>
       <workItem from="1717391194407" duration="115000" />
-      <workItem from="1717391799973" duration="3731000" />
+      <workItem from="1717391799973" duration="4420000" />
     </task>
     <task id="LOCAL-00001" summary="Added synchronous connection between platformservice and commandservice for communication when new platform is created">
       <option name="closed" value="true" />
