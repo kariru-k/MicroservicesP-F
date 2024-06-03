@@ -9,16 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8394f88e-4fdf-4300-a946-3aa1bcc1c6eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Controllers/PlatformsController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PlatformService/SyncDataServices/http/HttpCommandDataClient.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PlatformService/SyncDataServices/http/ICommandDataClient.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CommandsService.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CommandsService.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PlatformService/Controllers/PlatformsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../PlatformService/Controllers/PlatformsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PlatformService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../PlatformService/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PlatformService/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/../PlatformService/appsettings.Development.json" afterDir="false" />
-    </list>
+    <list default="true" id="8394f88e-4fdf-4300-a946-3aa1bcc1c6eb" name="Changes" comment="Added synchronous connection between platformservice and commandservice for communication when new platform is created" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +30,9 @@
     &quot;accountId&quot;: &quot;070890dc-2d67-4726-be85-1965d36770c1&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/HomePC/RiderProjects/MicroServicesPortfolio/PlatformService/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -113,6 +107,31 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="commandsservice" />
+          <option name="containerName" value="commandsservice" />
+          <option name="contextFolderPath" value="C:\Users\HomePC\RiderProjects\MicroServicesPortfolio\CommandsService" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="8080" />
+                <option name="hostIp" value="127.0.0.1" />
+                <option name="hostPort" value="8080" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -123,8 +142,17 @@
       <option name="presentableId" value="Default" />
       <updated>1717391185564</updated>
       <workItem from="1717391194407" duration="115000" />
-      <workItem from="1717391799973" duration="681000" />
+      <workItem from="1717391799973" duration="1057000" />
     </task>
+    <task id="LOCAL-00001" summary="Added synchronous connection between platformservice and commandservice for communication when new platform is created">
+      <option name="closed" value="true" />
+      <created>1717393456524</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1717393456524</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,5 +161,7 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Added synchronous connection between platformservice and commandservice for communication when new platform is created" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added synchronous connection between platformservice and commandservice for communication when new platform is created" />
   </component>
 </project>
