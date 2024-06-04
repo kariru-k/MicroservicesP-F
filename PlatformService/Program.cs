@@ -12,7 +12,16 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<AppDbContext>(options => options.UseInMemoryDatabase("InMem"));
+if (builder.Environment.IsDevelopment())
+{
+    Console.WriteLine("--> Using the inMem Database");
+    builder.Services.AddDbContext<AppDbContext>(options => options.UseInMemoryDatabase("InMem"));
+}
+else
+{
+    Console.WriteLine("--> Using the SQL Server Database");
+    builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("PlatformsConn")));
+}
 
 builder.Services.AddScoped<IPlatformRepo, PlatformRepository>();
 builder.Services.AddHttpClient<ICommandDataClient, HttpCommandDataClient>();
@@ -32,7 +41,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-PrepDb.PrepPopulation(app: app);
+PrepDb.PrepPopulation(app: app, app.Environment.IsProduction());
 
 app.MapControllers();
 
