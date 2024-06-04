@@ -1,3 +1,8 @@
+using CommandsService.Data;
+using CommandsService.Interfaces;
+using CommandsService.Repositories;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +11,10 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddScoped<ICommandRepo, CommandRepository>();
+builder.Services.AddDbContext<AppDbContext>(options => options.UseInMemoryDatabase("InMem"));
+
+
 
 var app = builder.Build();
 
