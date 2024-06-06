@@ -3,6 +3,7 @@ using PlatformService.AsyncDataServices;
 using PlatformService.Data;
 using PlatformService.Interfaces;
 using PlatformService.Repositories;
+using PlatformService.SyncDataServices.grpc;
 using PlatformService.SyncDataServices.http;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +13,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddGrpc();
 
 if (builder.Environment.IsDevelopment())
 {
@@ -45,5 +47,12 @@ app.UseHttpsRedirection();
 PrepDb.PrepPopulation(app: app, app.Environment.IsProduction());
 
 app.MapControllers();
+
+app.MapGrpcService<GrpcPlatformService>();
+
+app.MapGet("/protos/platforms.proto", async context =>
+{
+    await context.Response.WriteAsync(File.ReadAllText("Protos/platforms.proto"));
+});
 
 app.Run();
