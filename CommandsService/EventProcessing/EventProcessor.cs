@@ -26,7 +26,7 @@ public class EventProcessor: IEventProcessor
 
         switch (eventType!.Event)
         {
-            case "Platform Published":
+            case "Platform_Published":
             {
                 Console.WriteLine("Platform Published Event Detected");
                 return EventType.PlatformPublished;
@@ -74,6 +74,7 @@ public class EventProcessor: IEventProcessor
                 {
                     repo.CreatePlatform(plat);
                     repo.SaveChanges();
+                    Console.WriteLine("Platform added");
                 }
                 else
                 {
