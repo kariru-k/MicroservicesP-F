@@ -15,7 +15,7 @@ public class CommandsController: ControllerBase
 
     public CommandsController(ICommandRepo repository, IMapper mapper)
     {
-        _repository = repository;
+        _repository = repository; 
         _mapper = mapper;
     }
 
