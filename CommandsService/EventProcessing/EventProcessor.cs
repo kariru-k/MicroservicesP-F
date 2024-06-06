@@ -49,7 +49,7 @@ public class EventProcessor: IEventProcessor
         {
             case EventType.PlatformPublished:
             {
-                //TO DO
+                AddPlatform(message);
                 break;
             }
             default:
