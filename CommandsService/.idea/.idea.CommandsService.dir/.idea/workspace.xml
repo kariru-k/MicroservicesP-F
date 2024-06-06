@@ -11,13 +11,22 @@
   <component name="ChangeListManager">
     <list default="true" id="8394f88e-4fdf-4300-a946-3aa1bcc1c6eb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CommandsService.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CommandsService.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CommandsService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CommandsService.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/PrepDB.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/PrepDB.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlatformService/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../PlatformService/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlatformService/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../PlatformService/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JSON File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -35,6 +44,16 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/5535e31a712343a63f5d7d796cd874e563e5ac14/src/libraries/Microsoft.Extensions.Hosting.Abstractions/src/BackgroundService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/HomePC/RiderProjects/MicroServicesPortfolio/CommandsService/EventProcessing/EventProcessor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/HomePC/RiderProjects/MicroServicesPortfolio/CommandsService/EventProcessing/EventProcessor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/HomePC/RiderProjects/MicroServicesPortfolio/CommandsService/Mappers/CommandsMapper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/HomePC/RiderProjects/MicroServicesPortfolio/CommandsService/Mappers/CommandsMapper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/HomePC/RiderProjects/MicroServicesPortfolio/CommandsService/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/HomePC/RiderProjects/MicroServicesPortfolio/CommandsService/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/HomePC/RiderProjects/MicroServicesPortfolio/CommandsService/Repositories/CommandRepository.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/HomePC/RiderProjects/MicroServicesPortfolio/CommandsService/SyncDataServices/Grpc/PlatformDataClient.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/HomePC/RiderProjects/MicroServicesPortfolio/CommandsService/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../PlatformService/Migrations/20240603183356_initialmigration.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -49,27 +68,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\HomePC\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\HomePC\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\HomePC\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\HomePC\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\HomePC\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\HomePC\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.CommandsService: IIS Express">
     <configuration name="CommandsService: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/CommandsService.csproj" />
@@ -160,6 +179,8 @@
       <workItem from="1717655503661" duration="3369000" />
       <workItem from="1717659534599" duration="268000" />
       <workItem from="1717660103004" duration="112000" />
+      <workItem from="1717660424535" duration="20841000" />
+      <workItem from="1717701955085" duration="1551000" />
     </task>
     <task id="LOCAL-00001" summary="Added synchronous connection between platformservice and commandservice for communication when new platform is created">
       <option name="closed" value="true" />
@@ -233,7 +254,79 @@
       <option name="project" value="LOCAL" />
       <updated>1717505186184</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added RabbitMQ Client and requisite Dtos to CommandsService">
+      <option name="closed" value="true" />
+      <created>1717661557644</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1717661557644</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added configurations for the event processors using RabbitMQ">
+      <option name="closed" value="true" />
+      <created>1717668367995</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1717668367995</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Fix: Registered the Event Processor as a singleton">
+      <option name="closed" value="true" />
+      <created>1717668617040</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1717668617040</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Created the RabbitMQ Event Processor">
+      <option name="closed" value="true" />
+      <created>1717678032563</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1717678032563</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Created the background service Subscriber for RabbitMQ">
+      <option name="closed" value="true" />
+      <created>1717678080401</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1717678080401</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Fix: Add AddPlatform function into the processor">
+      <option name="closed" value="true" />
+      <created>1717678457691</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1717678457691</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Added protobuf to CommandService">
+      <option name="closed" value="true" />
+      <created>1717695329330</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1717695329330</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Added mapper from grpc models to class models and implemented scaffolding for Client">
+      <option name="closed" value="true" />
+      <created>1717696110573</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1717696110573</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Created Seeding Data Class to obtain the values from gRPC services">
+      <option name="closed" value="true" />
+      <created>1717697574268</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1717697574268</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,6 +356,15 @@
     <MESSAGE value="Created commandservice dtos" />
     <MESSAGE value="Implemented Automapper and created mappers between models and DTOs" />
     <MESSAGE value="Created CommandController and added routes and actions to PlatformsController" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created CommandController and added routes and actions to PlatformsController" />
+    <MESSAGE value="Added RabbitMQ Client and requisite Dtos to CommandsService" />
+    <MESSAGE value="Added configurations for the event processors using RabbitMQ" />
+    <MESSAGE value="Fix: Registered the Event Processor as a singleton" />
+    <MESSAGE value="Created the RabbitMQ Event Processor" />
+    <MESSAGE value="Created the background service Subscriber for RabbitMQ" />
+    <MESSAGE value="Fix: Add AddPlatform function into the processor" />
+    <MESSAGE value="Added protobuf to CommandService" />
+    <MESSAGE value="Added mapper from grpc models to class models and implemented scaffolding for Client" />
+    <MESSAGE value="Created Seeding Data Class to obtain the values from gRPC services" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Seeding Data Class to obtain the values from gRPC services" />
   </component>
 </project>
